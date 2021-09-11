@@ -480,6 +480,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-agree {
@@ -501,25 +505,10 @@ button {
   color: var(--accent-color);
 }
 
-.checkbox-policy:focus ~ .icon-check {
-  /*border: transparent;
-  /*border-color: var(--accent-color);
-  background-color: var(--accent-color);*/
-}
-
 .checkbox-policy:checked ~ .icon-check {
   border: transparent;
   background-color: var(--accent-color);
-  /*background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-color: var(--accent-color);
-  border-radius: 2px;*/
 }
-
-/*.icon-check {
-  background-color: var(--accent-color);
-}*/
 
 .visually-hidden {
   position: absolute;
@@ -774,14 +763,6 @@ button {
 .social-link:focus {
   fill: var(--white-color);
 }
-/*.social-link:focus,
-.social-link:hover .social-link-footer,
-.team-social-list-el:focus .social-link-footer {
-  background-color: var(--accent-color);
-}
-.social-link-footer .social-icon-footer {
-  fill: var(--white-color);
-}*/
 
 /*Clients*/
 .clients {
@@ -828,10 +809,6 @@ button {
   border: 1px solid var(--accent-color);
   background-color: var(--white-color);
 }
-/*.clients-link:focus .clients-icon,
-.clients-link:hover .clients-icon {
-  fill: var(--accent-color);
-}*/
 
 .clients-link:focus .clients-icon,
 .clients-link:hover .clients-icon {
